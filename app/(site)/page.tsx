@@ -23,7 +23,7 @@ export default function HomePage() {
           </div>
           
           <p className="text-xl md:text-2xl text-gray-700 mb-4 max-w-2xl mx-auto italic">
-            Bienvenue dans mon coin d'Internet
+            Bienvenue dans mon coin d&apos;Internet
           </p>
           <p className="text-base md:text-lg text-gray-600 mb-8 max-w-xl mx-auto">
             Un journal personnel où je partage mes pensées, mes découvertes et mes aventures.

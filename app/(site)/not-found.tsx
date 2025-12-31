@@ -9,13 +9,13 @@ export default function NotFound() {
         Oups! Page introuvable
       </h2>
       <p className="text-xl text-gray-600 mb-10 font-handwritten">
-        Cette page semble s'être envolée... 🦋
+        Cette page semble s&apos;être envolée... 🦋
       </p>
       <Link
         href="/"
         className="inline-block px-10 py-4 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-all font-handwritten text-2xl shadow-xl hover:-translate-y-1 transform"
       >
-        Retour à l'accueil 🏠
+        Retour à l&apos;accueil 🏠
       </Link>
     </div>
   );

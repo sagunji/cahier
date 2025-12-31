@@ -36,7 +36,7 @@ export default function AboutPage() {
             Bonjour! 👋
           </p>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6 text-center">
-            Bienvenue dans mon coin d'Internet. Un espace personnel où je
+            Bienvenue dans mon coin d&apos;Internet. Un espace personnel où je
             partage mes pensées, découvertes et aventures.
           </p>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed text-center">

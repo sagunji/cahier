@@ -1,6 +1,6 @@
 ---
 title: "Bienvenue sur mon blog"
-date: "2024-01-15"
+date: "2025-12-30"
 description: "Premier article - un petit mot de bienvenue dans mon coin d'Internet"
 tags: ["bienvenue", "personnel"]
 published: true

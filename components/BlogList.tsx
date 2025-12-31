@@ -39,16 +39,15 @@ export function BlogList({ posts, allTags }: BlogListProps) {
   return (
     <div>
       {/* Search and Filter Section */}
-      <div className="mb-8 space-y-5 bg-white/50 backdrop-blur-sm p-6 rounded-2xl border-2 border-purple-200">
+      <div className="mb-10 space-y-4">
         <SearchBox
           value={searchQuery}
           onChange={setSearchQuery}
-          placeholder="Rechercher un article..."
+          placeholder="Rechercher..."
         />
 
         {allTags.length > 0 && (
           <div>
-            <h3 className="text-lg font-handwritten font-semibold text-gray-700 mb-3">Filtrer par thème:</h3>
             <div className="flex flex-wrap gap-2">
               <TagPill
                 tag="Tout"
@@ -70,29 +69,28 @@ export function BlogList({ posts, allTags }: BlogListProps) {
 
       {/* Results count */}
       {(searchQuery || selectedTag) && (
-        <div className="mb-4 text-base text-gray-600 font-handwritten">
-          {filteredPosts.length} {filteredPosts.length === 1 ? 'article trouvé' : 'articles trouvés'} 📝
+        <div className="mb-6 text-sm text-stone-600">
+          {filteredPosts.length} {filteredPosts.length === 1 ? 'résultat' : 'résultats'}
         </div>
       )}
 
       {/* Posts List */}
-      <div className="space-y-6">
+      <div className="space-y-12">
         {filteredPosts.length > 0 ? (
           filteredPosts.map((post, index) => (
             <PostCard key={post.slug} post={post} index={index} />
           ))
         ) : (
-          <div className="text-center py-16 bg-white/50 rounded-2xl border-2 border-dashed border-purple-300">
-            <div className="mb-4 text-6xl">🔍</div>
-            <p className="text-gray-600 mb-6 font-handwritten text-xl">
-              Aucun article ne correspond à votre recherche...
+          <div className="text-center py-16 border border-stone-200 rounded-lg">
+            <p className="text-stone-500 mb-4">
+              Aucun article trouvé
             </p>
             <button
               onClick={() => {
                 setSearchQuery('');
                 setSelectedTag(null);
               }}
-              className="px-6 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-all font-handwritten text-lg shadow-lg hover:-translate-y-1 transform"
+              className="text-stone-900 hover:text-stone-600 font-medium transition-colors"
             >
               Réinitialiser
             </button>
